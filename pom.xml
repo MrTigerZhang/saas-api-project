@@ -18,6 +18,7 @@
   <modules>
 
     <module>saas-accounting-api</module>
+    <module>saas-common-core</module>
   </modules>
 
 
