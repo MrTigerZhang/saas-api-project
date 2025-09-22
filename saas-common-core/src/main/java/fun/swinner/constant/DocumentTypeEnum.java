@@ -11,8 +11,8 @@ public enum DocumentTypeEnum {
     ACTUAL_PAID("4", "实付"),
     ADVANCE_RECEIVED("5", "预收"),
     ADVANCE_PAID("6", "预付"),
-    WRITE_OFF("7", "冲销"),
-    REFUND("8", "退款");
+    WRITE_OFF("7", "冲销");
+
 
     private final String code;
     private final String description;
