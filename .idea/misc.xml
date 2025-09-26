@@ -10,6 +10,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/saas-accouting-api/pom.xml" />
+        <option value="$PROJECT_DIR$/saas-common-core/saas-transaction-api/pom.xml" />
         <option value="$PROJECT_DIR$/saas-common/pom.xml" />
         <option value="$PROJECT_DIR$/untitled/pom.xml" />
       </set>

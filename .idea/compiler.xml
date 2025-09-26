@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -27,6 +28,7 @@
         </processorPath>
         <module name="saas-accounting-api" />
         <module name="saas-common-core" />
+        <module name="saas-transaction-api" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -44,6 +46,7 @@
       <module name="saas-common" options="-parameters" />
       <module name="saas-common-core" options="-parameters" />
       <module name="saas-common-lib" options="-parameters" />
+      <module name="saas-transaction-api" options="-parameters" />
       <module name="untitled" options="-parameters" />
     </option>
   </component>
