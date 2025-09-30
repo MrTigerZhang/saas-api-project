@@ -1,8 +1,10 @@
 package fun.swinner.accounting.api;
 
+import fun.swinner.accounting.api.domain.RemoteAccTransfer;
 import fun.swinner.accounting.api.domain.RemoteDocument;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * 内部转账 查询数据
@@ -15,12 +17,12 @@ public interface RemoteTransferService {
      *
      * @return 内部转账类型的单据数据。
      */
-    List<RemoteDocument> getData();
+    List<RemoteDocument> getData(String business, String documentType, String tenantId);
 
     /**
      * 生成完凭证后，回调，用于标记数据已经创建
      *
-     * @param documents
+     * @param datas key:Vouncher_no,vouncher_date,id,
      */
-    void completeData(List<RemoteDocument> documents);
+    void completeData(List<Map<String,Object>> datas, String tenantId);
 }

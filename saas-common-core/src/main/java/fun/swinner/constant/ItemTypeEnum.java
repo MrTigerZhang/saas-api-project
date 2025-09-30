@@ -9,6 +9,8 @@ public enum ItemTypeEnum {
     PRODUCT("product", "商品"),
     SERVICE("service", "服务"),
     FEE("fee", "费用"),
+    INNER_IN("inner-in", "内部转入"),
+    INNER_OUT("inner-out", "内部转出"),
     OTHER("other", "其它");
 
     private final String code;

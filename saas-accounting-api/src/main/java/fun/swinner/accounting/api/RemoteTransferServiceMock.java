@@ -1,9 +1,11 @@
 package fun.swinner.accounting.api;
 
+import fun.swinner.accounting.api.domain.RemoteAccTransfer;
 import fun.swinner.accounting.api.domain.RemoteDocument;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * 内部转账 查询数据
@@ -19,7 +21,7 @@ public class RemoteTransferServiceMock implements RemoteTransferService {
      * @return 内部转账类型的单据数据。
      */
     @Override
-    public List<RemoteDocument> getData() {
+    public List<RemoteDocument> getData(String business, String documentType, String tenantId) {
         log.warn("拉取 内部转账的单据数据 服务降级");
         return null;
     }
@@ -30,7 +32,7 @@ public class RemoteTransferServiceMock implements RemoteTransferService {
      * @param documents
      */
     @Override
-    public void completeData(List<RemoteDocument> documents) {
+    public void completeData(List<Map<String,Object>> documents, String tenantId) {
         log.warn("回调接口服务降级");
     }
 }
