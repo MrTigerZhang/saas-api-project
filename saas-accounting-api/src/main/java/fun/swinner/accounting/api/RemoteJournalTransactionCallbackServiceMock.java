@@ -19,7 +19,7 @@ public class RemoteJournalTransactionCallbackServiceMock implements RemoteJourna
      * @return return msg
      */
     @Override
-    public String journalCall(String data) {
+    public String journalCall(String data,String data2) {
         log.warn("服务降级");
         return null;
     }

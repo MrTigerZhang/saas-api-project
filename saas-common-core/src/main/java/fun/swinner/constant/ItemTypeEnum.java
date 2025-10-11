@@ -17,6 +17,8 @@ public enum ItemTypeEnum {
 
     MANUAL_IN("manual-in", "手工记账_借"),
     MANUAL_OUT("manual-out", "手工记账_贷"),
+    ACCOUNT_IN("account-in", "账户_借"),
+    ACCOUNT_OUT("account-out", "账户_贷"),
     OTHER_IN("other_in", "其它_借"),
     OTHER_OUT("other_out", "其它_贷");
 
