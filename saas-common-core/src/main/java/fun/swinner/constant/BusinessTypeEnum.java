@@ -4,7 +4,7 @@ package fun.swinner.constant;
  * 业务类型枚举
  */
 public enum BusinessTypeEnum {
-    MANUAL_ENTRY("0", "手工录入"),
+    MANUAL_ENTRY("0", "日记账"),
     SALES_ORDER("1", "销售订单"),
     CUSTOMER_ORDER("2", "客户订单"),
     CUSTOMER_RECHARGE("3", "客户充值"),

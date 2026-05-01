@@ -92,10 +92,19 @@ public class FinancialEvent {
 
     private Long updateBy;
 
+    private String attachment;
+
     public void setAuxData(AuxData data) {
-        snapshotData = new HashMap<>();
-        snapshotData.put("id", data.getId());
-        snapshotData.put("type", data.getType());
-        snapshotData.put("name", data.getName());
+        if(snapshotData == null){
+            snapshotData = new HashMap<>();
+        }
+        snapshotData.put("customer", data);
+    }
+
+    public void setAuxData(String key, AuxData data) {
+        if(snapshotData == null){
+            snapshotData = new HashMap<>();
+        }
+        snapshotData.put(key, data);
     }
 }
