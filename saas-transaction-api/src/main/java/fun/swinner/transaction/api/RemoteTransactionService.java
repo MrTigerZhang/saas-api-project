@@ -14,9 +14,9 @@ public interface RemoteTransactionService {
     /**
      * 创建新事务
      *
-     * @param transaction
+     * @param businessType 业务类型
+     * @param businessKey 业务标识
      * @return
      */
-    Boolean createTransaction(RemoteTransaction transaction);
-
+    Boolean createTransaction(String businessType, String businessKey);
 }

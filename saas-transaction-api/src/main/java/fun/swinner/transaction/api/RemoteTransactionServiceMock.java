@@ -14,9 +14,17 @@ import lombok.extern.slf4j.Slf4j;
 public class RemoteTransactionServiceMock implements RemoteTransactionService {
 
 
+
+    /**
+     * 创建新事务
+     *
+     * @param businessType 业务类型
+     * @param businessKey  业务标识
+     * @return
+     */
     @Override
-    public Boolean createTransaction(RemoteTransaction transaction) {
-        log.warn("服务降级");
+    public Boolean createTransaction(String businessType, String businessKey) {
+        log.info("createTransaction mock, businessType: {}, businessKey: {}", businessType, businessKey);
         return null;
     }
 }
