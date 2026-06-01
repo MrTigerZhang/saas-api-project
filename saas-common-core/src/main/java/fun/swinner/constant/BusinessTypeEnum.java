@@ -13,6 +13,7 @@ public enum BusinessTypeEnum {
     SUPPLIER_DEPOSIT("6", "供应商存款"),
     MANUAL_ACCOUNTING("7", "手动记账"),
     SALES_COMMISSION("8", "销售提成"),
+    INVENTORY("11", "商品库存"),
     OTHER("20", "其它");
 
     private final String code;

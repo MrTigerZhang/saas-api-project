@@ -25,7 +25,7 @@ public class FinancialEventPublisher {
      * 
      * @param event 组装好的标准业务快照
      */
-    public void publish(FinancialEvent event) {
+    public boolean publish(FinancialEvent event) {
         log.info("【Financial Proxy】开始发布财务事件，场景码：{}, 来源单号：{}", event.getBusinessCode(), event.getSourceNo());
         // 使用 spring cloud stream 发送事件
         // 1. 确定 Binding 名称（通常与配置文件中的 output 绑定名一致，这里假设为 financial_event）
@@ -33,6 +33,6 @@ public class FinancialEventPublisher {
         // 2. 确定消息 Key（通常用于分区，建议使用业务单号或租户ID）
         String messageKey = "create_voucher";
         // 3. 发送
-        publisher.publish(bindingName, event, messageKey);
+        return publisher.publish(bindingName, event, messageKey);
     }
 }

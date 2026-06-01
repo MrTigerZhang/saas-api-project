@@ -8,7 +8,11 @@
 
 package fun.swinner.accounting.api;
 
+import fun.swinner.accounting.api.domain.VoucherReceipt;
+import fun.swinner.accounting.api.domain.VoucherReceiptQueryVo;
 import lombok.extern.slf4j.Slf4j;
+
+import java.util.List;
 
 @Slf4j
 public class RemoteAccountingJournalServiceImpl implements RemoteAccountingJournalService {
@@ -19,4 +23,6 @@ public class RemoteAccountingJournalServiceImpl implements RemoteAccountingJourn
     public void recall(String businessKey,String transactionId) {
         log.info("recall, businessKey: {}", businessKey);
     }
+
+
 }
